@@ -1,6 +1,4 @@
 import pandas as pd
-#import numpy as np
-import sklearn.preprocessing as sp
 from mlxtend.frequent_patterns import apriori
 from mlxtend.frequent_patterns import association_rules
 from mlxtend.preprocessing import TransactionEncoder
@@ -8,7 +6,7 @@ from mlxtend.preprocessing import TransactionEncoder
 #读取文件
 dataset = pd.read_csv('./Market_Basket_Optimisation.csv', header = None) 
 # 查看维度，shape为(7501,20)
-print(dataset.head())
+print(dataset)
 
 #将数据存放到transactions中
 transactions = []
